@@ -92,7 +92,7 @@ function getPolynom(...args) {
   if (args.length === 0) return null;
   return function y(x) {
     let result = 0;
-    [...args].reverse().forEach(function (item, index) {
+    [...args].reverse().forEach(function getResult(item, index) {
       if (index === 0) {
         result += item;
       } else result += item * x ** index;
